@@ -7,9 +7,11 @@ import "bootstrap";
  */
 import "./styles/app.scss";
 
+import "./js/Doctor.jsx";
+
 //import "./bootstrap";
 
-console.log("This log comes from assets/app.js - welcome to AssetMapper! 🎉");
+//console.log("This log comes from assets/app.js - welcome to AssetMapper! 🎉");
 // $(document).ready(function () {
 //   $('[data-toggle="popover"]').popover();
 // });

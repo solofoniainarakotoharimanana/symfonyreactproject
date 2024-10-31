@@ -73,12 +73,14 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private ?string $slug = null;
 
     #[ORM\Column(length: 255, nullable: true)]
+    #[Groups(['read:user'])]
     private ?string $profile = null;
 
     /**
      * @var Collection<int, Address>
      */
     #[ORM\OneToMany(targetEntity: Address::class, mappedBy: 'user')]
+    #[Groups(['read:user'])]
     private Collection $addresses;
 
     /**
